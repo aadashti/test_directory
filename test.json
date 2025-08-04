@@ -45,4 +45,7 @@
       "~/scripts/after_custom_packages.sh"
     ]
   }
+  "hello": [
+    "world"
+  ]
 }
