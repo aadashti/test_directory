@@ -1,3 +1,48 @@
 {
-  "Hello world!"
+  "package_management": {
+    "pre": [
+      "~/scripts/before_package_management.sh"
+    ],
+    "flatpak": {
+      "enabled": false,
+      "include_beta": false,
+      "install_flatseal": false
+    },
+    "nix": false,
+    "snap": false,
+    "appimage": {
+      "enabled": false,
+      "include_appimage_manager": false
+    },
+    "post": [
+      "~/scripts/after_package_management.sh"
+    ]
+  },
+  "custom_packages": {
+    "pre": [
+      "~/scripts/before_custom_packages.sh"
+    ],
+    "apt": [
+      "neofetch",
+      "vim",
+      "sddm"
+    ],
+    "pacstall": [
+      "discord-deb",
+      "ubxi-kde-desktop-git"
+    ],
+    "flatpak": [
+      "com.spotify.Client",
+      "org.gimp.GIMP"
+    ],
+    "nix": [
+      "htop"
+    ],
+    "snap": [
+      "code"
+    ],
+    "post": [
+      "~/scripts/after_custom_packages.sh"
+    ]
+  }
 }
