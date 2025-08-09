@@ -4,7 +4,7 @@
       "~/scripts/before_package_management.sh"
     ],
     "flatpak": {
-      "enabled": false,
+      "enabled": true,
       "include_beta": false,
       "install_flatseal": false
     },
