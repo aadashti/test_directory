@@ -5,7 +5,7 @@
     ],
     "flatpak": {
       "enabled": true,
-      "include_beta": false,
+      "include_beta": true,
       "install_flatseal": false
     },
     "nix": false,
