@@ -1,5 +1,8 @@
 {
   "package_management": {
+    "pre": [
+      ""
+    ],
     "flatpak": {
       "enabled": true,
       "include_beta": true,
@@ -10,9 +13,15 @@
     "appimage": {
       "enabled": false,
       "include_appimage_manager": false
-    }
+    },
+    "post": [
+      ""
+    ]
   },
   "custom_packages": {
+    "pre": [
+      ""
+    ],
     "apt": [
       "neofetch",
       "vim",
@@ -31,6 +40,9 @@
     ],
     "snap": [
       "code"
+    ],
+    "post": [
+      ""
     ]
   }
 }
