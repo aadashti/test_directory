@@ -1,8 +1,5 @@
 {
   "package_management": {
-    "pre": [
-      "~/scripts/before_package_management.sh"
-    ],
     "flatpak": {
       "enabled": true,
       "include_beta": true,
@@ -13,15 +10,9 @@
     "appimage": {
       "enabled": false,
       "include_appimage_manager": false
-    },
-    "post": [
-      "~/scripts/after_package_management.sh"
-    ]
+    }
   },
   "custom_packages": {
-    "pre": [
-      "~/scripts/before_custom_packages.sh"
-    ],
     "apt": [
       "neofetch",
       "vim",
@@ -40,9 +31,6 @@
     ],
     "snap": [
       "code"
-    ],
-    "post": [
-      "~/scripts/after_custom_packages.sh"
     ]
   }
 }
